@@ -4,6 +4,7 @@
 # use_frameworks!
 
 target 'sample-ruby-objc' do
-
+platform :ios, '8.3'
+pod 'CRuby', git: 'https://github.com/zaru/cruby'
 end
 
