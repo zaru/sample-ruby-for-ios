@@ -1,0 +1,6 @@
+#ifndef EXTCONF_H
+#define EXTCONF_H
+#define HAVE_STRUCT_STAT_ST_BIRTHTIMESPEC 1
+#define HAVE_ST_ST_BIRTHTIMESPEC 1
+#define RUBY_EXPORT 1
+#endif

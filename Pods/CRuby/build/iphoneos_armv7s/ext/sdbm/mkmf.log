@@ -1,0 +1,9 @@
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define BADMESS 0
+4: #define RUBY_EXPORT 1
+5: #endif
+/* end */
+

@@ -1,0 +1,29 @@
+have_struct_member: checking for struct stat.st_birthtimespec in sys/stat.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/pathname -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/stat.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct stat*)0)->st_birthtimespec - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return 0;
+10: }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_STRUCT_STAT_ST_BIRTHTIMESPEC 1
+4: #define HAVE_ST_ST_BIRTHTIMESPEC 1
+5: #define RUBY_EXPORT 1
+6: #endif
+/* end */
+

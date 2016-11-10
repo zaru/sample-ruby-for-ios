@@ -1,0 +1,42 @@
+{
+  "name": "CRuby",
+  "version": "0.1.0",
+  "summary": "CRuby (MRI) Interpreter.",
+  "description": "CRuby (MRI) interpreter for embedding it to OSX/iOS App.",
+  "license": "MIT",
+  "source": {
+    "git": "https://github.com/xord/cruby"
+  },
+  "authors": {
+    "snori": "snori@xord.org"
+  },
+  "homepage": "https://github.com/xord",
+  "platforms": {
+    "osx": "10.7",
+    "ios": "7.0"
+  },
+  "source_files": "CRuby/**/*.{h,m}",
+  "resource_bundles": {
+    "CRuby": "build/lib"
+  },
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "${PODS_ROOT}/CRuby/build"
+  },
+  "preserve_paths": [
+    "ruby",
+    "build"
+  ],
+  "osx": {
+    "frameworks": "CRuby_osx",
+    "xcconfig": {
+      "HEADER_SEARCH_PATHS": "${PODS_ROOT}/CRuby/build/CRuby_osx.framework/Headers"
+    }
+  },
+  "ios": {
+    "frameworks": "CRuby_ios",
+    "xcconfig": {
+      "HEADER_SEARCH_PATHS": "${PODS_ROOT}/CRuby/build/CRuby_ios.framework/Headers"
+    }
+  },
+  "prepare_command": "rake platform='ios'"
+}

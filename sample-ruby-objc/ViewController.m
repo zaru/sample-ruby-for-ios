@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "CRuby/CRuby.h"
+#import "CRuby/CRBValue.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    CRBValue *result = [CRuby evaluate:@"1"];
+//    NSString *string = result.inspect;
+//    NSLog(@"result: %@", string);
 }
 
 

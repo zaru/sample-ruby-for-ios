@@ -1,0 +1,1412 @@
+have_library: checking for tgetnum() in -lncurses... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64   -lruby-static -framework CoreFoundation -lncurses  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'tgetnum'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))tgetnum; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))tgetnum; return !p; }
+/* end */
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64   -lruby-static -framework CoreFoundation -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void tgetnum();
+14: int t(void) { tgetnum(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for readline/readline.h... -------------------- yes
+
+"clang -arch x86_64 -E -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <readline/readline.h>
+/* end */
+
+--------------------
+
+have_header: checking for readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -E -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <readline/history.h>
+/* end */
+
+--------------------
+
+have_library: checking for readline() in -lreadline... -------------------- no
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -lncurses  -lruby-static -framework CoreFoundation -lreadline -lncurses  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'readline'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))readline; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))readline; return !p; }
+/* end */
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -lncurses  -lruby-static -framework CoreFoundation -lreadline -lncurses  -lpthread -ldl -lobjc "
+ld: library not found for -lreadline
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void readline();
+14: int t(void) { readline(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for readline() in -ledit... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'readline'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))readline; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))readline; return !p; }
+/* end */
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void readline();
+14: int t(void) { readline(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_getc() in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+conftest.c:17:57: error: use of undeclared identifier 'rl_getc'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_getc; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_getc; return !p; }
+/* end */
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_rl_getc", referenced from:
+      _t in conftest-9c0a20.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void rl_getc();
+18: int t(void) { rl_getc(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_getc_function() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_getc_function; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_filename_completion_function() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_filename_completion_function; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_username_completion_function() in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+conftest.c:17:57: error: use of undeclared identifier 'rl_username_completion_function'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_username_completion_function; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_username_completion_function; return !p; }
+/* end */
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_rl_username_completion_function", referenced from:
+      _t in conftest-17f660.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void rl_username_completion_function();
+18: int t(void) { rl_username_completion_function(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_completion_matches() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_completion_matches; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_refresh_line() in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+conftest.c:17:57: error: use of undeclared identifier 'rl_refresh_line'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_refresh_line; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_refresh_line; return !p; }
+/* end */
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_rl_refresh_line", referenced from:
+      _t in conftest-26ec07.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void rl_refresh_line();
+18: int t(void) { rl_refresh_line(); return 0; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_deprep_term_function in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_deprep_term_function)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_completion_append_character in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_completion_append_character)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_basic_word_break_characters in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_basic_word_break_characters)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_completer_word_break_characters in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_completer_word_break_characters)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_basic_quote_characters in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+conftest.c:17:55: error: use of undeclared identifier 'rl_basic_quote_characters'
+int t(void) { const volatile void *volatile p; p = &(&rl_basic_quote_characters)[0]; return !p; }
+                                                      ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_basic_quote_characters)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_completer_quote_characters in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_completer_quote_characters)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_filename_quote_characters in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+conftest.c:17:55: error: use of undeclared identifier 'rl_filename_quote_characters'; did you mean 'rl_completer_quote_characters'?
+int t(void) { const volatile void *volatile p; p = &(&rl_filename_quote_characters)[0]; return !p; }
+                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                      rl_completer_quote_characters
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/include/readline/history.h:110:15: note: 'rl_completer_quote_characters' declared here
+extern char             *rl_completer_quote_characters;
+                         ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_filename_quote_characters)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_attempted_completion_over in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_attempted_completion_over)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_library_version in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_library_version)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_editing_mode in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+conftest.c:17:55: error: use of undeclared identifier 'rl_editing_mode'
+int t(void) { const volatile void *volatile p; p = &(&rl_editing_mode)[0]; return !p; }
+                                                      ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_editing_mode)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_line_buffer in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_line_buffer)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_point in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_point)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_event_hook in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+conftest.c:17:55: error: use of undeclared identifier 'rl_event_hook'; did you mean 'rb_add_event_hook'?
+int t(void) { const volatile void *volatile p; p = &(&rl_event_hook)[0]; return !p; }
+                                                      ^~~~~~~~~~~~~
+                                                      rb_add_event_hook
+/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include/ruby/ruby.h:2089:6: note: 'rb_add_event_hook' declared here
+void rb_add_event_hook(rb_event_hook_func_t func, rb_event_flag_t events, VALUE data);
+     ^
+conftest.c:17:53: error: subscript of pointer to function type 'void (rb_event_hook_func_t, rb_event_flag_t, VALUE)' (aka 'void (void (*)(unsigned int, unsigned long, unsigned long, unsigned long, unsigned long), unsigned int, unsigned long)')
+int t(void) { const volatile void *volatile p; p = &(&rl_event_hook)[0]; return !p; }
+                                                    ^~~~~~~~~~~~~~~~
+2 errors generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_event_hook)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_catch_sigwinch in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+conftest.c:17:55: error: use of undeclared identifier 'rl_catch_sigwinch'
+int t(void) { const volatile void *volatile p; p = &(&rl_catch_sigwinch)[0]; return !p; }
+                                                      ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_catch_sigwinch)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_catch_signals in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+conftest.c:17:55: error: use of undeclared identifier 'rl_catch_signals'
+int t(void) { const volatile void *volatile p; p = &(&rl_catch_signals)[0]; return !p; }
+                                                      ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_catch_signals)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_pre_input_hook in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_pre_input_hook)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for rl_special_prefixes in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { const volatile void *volatile p; p = &(&rl_special_prefixes)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_cleanup_after_signal() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_cleanup_after_signal; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_free_line_state() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_free_line_state; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_clear_signals() in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+conftest.c:17:57: error: use of undeclared identifier 'rl_clear_signals'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_clear_signals; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_clear_signals; return !p; }
+/* end */
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_rl_clear_signals", referenced from:
+      _t in conftest-e840c1.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void rl_clear_signals();
+18: int t(void) { rl_clear_signals(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_set_screen_size() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_set_screen_size; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_get_screen_size() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_get_screen_size; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_vi_editing_mode() in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+conftest.c:17:57: error: use of undeclared identifier 'rl_vi_editing_mode'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_vi_editing_mode; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_vi_editing_mode; return !p; }
+/* end */
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_rl_vi_editing_mode", referenced from:
+      _t in conftest-3a3d5e.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void rl_vi_editing_mode();
+18: int t(void) { rl_vi_editing_mode(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_emacs_editing_mode() in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+conftest.c:17:57: error: use of undeclared identifier 'rl_emacs_editing_mode'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_emacs_editing_mode; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_emacs_editing_mode; return !p; }
+/* end */
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_rl_emacs_editing_mode", referenced from:
+      _t in conftest-f8d058.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void rl_emacs_editing_mode();
+18: int t(void) { rl_emacs_editing_mode(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for replace_history_entry() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))replace_history_entry; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for remove_history() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))remove_history; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for clear_history() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))clear_history; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_redisplay() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_redisplay; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_insert_text() in stdio.h,readline/readline.h,readline/history.h... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_insert_text; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rl_delete_text() in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+conftest.c:17:57: error: use of undeclared identifier 'rl_delete_text'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_delete_text; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rl_delete_text; return !p; }
+/* end */
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64  -ledit -lncurses  -lruby-static -framework CoreFoundation -ledit -lncurses  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_rl_delete_text", referenced from:
+      _t in conftest-b8240f.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdio.h>
+ 4: #include <readline/readline.h>
+ 5: #include <readline/history.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void rl_delete_text();
+18: int t(void) { rl_delete_text(); return 0; }
+/* end */
+
+--------------------
+
+have_type: checking for rl_hook_func_t* in stdio.h,readline/readline.h,readline/history.h... -------------------- no
+
+"clang -arch x86_64 -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/readline -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  -arch x86_64  -c conftest.c"
+conftest.c:8:9: error: unknown type name 'rl_hook_func_t'
+typedef rl_hook_func_t* conftest_type;
+        ^
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdio.h>
+4: #include <readline/readline.h>
+5: #include <readline/history.h>
+6: 
+7: /*top*/
+8: typedef rl_hook_func_t* conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_READLINE_READLINE_H 1
+ 4: #define HAVE_READLINE_HISTORY_H 1
+ 5: #define HAVE_RL_GETC_FUNCTION 1
+ 6: #define HAVE_RL_FILENAME_COMPLETION_FUNCTION 1
+ 7: #define HAVE_RL_COMPLETION_MATCHES 1
+ 8: #define HAVE_RL_DEPREP_TERM_FUNCTION 1
+ 9: #define HAVE_RL_COMPLETION_APPEND_CHARACTER 1
+10: #define HAVE_RL_BASIC_WORD_BREAK_CHARACTERS 1
+11: #define HAVE_RL_COMPLETER_WORD_BREAK_CHARACTERS 1
+12: #define HAVE_RL_COMPLETER_QUOTE_CHARACTERS 1
+13: #define HAVE_RL_ATTEMPTED_COMPLETION_OVER 1
+14: #define HAVE_RL_LIBRARY_VERSION 1
+15: #define HAVE_RL_LINE_BUFFER 1
+16: #define HAVE_RL_POINT 1
+17: #define HAVE_RL_PRE_INPUT_HOOK 1
+18: #define HAVE_RL_SPECIAL_PREFIXES 1
+19: #define HAVE_RL_CLEANUP_AFTER_SIGNAL 1
+20: #define HAVE_RL_FREE_LINE_STATE 1
+21: #define HAVE_RL_SET_SCREEN_SIZE 1
+22: #define HAVE_RL_GET_SCREEN_SIZE 1
+23: #define HAVE_REPLACE_HISTORY_ENTRY 1
+24: #define HAVE_REMOVE_HISTORY 1
+25: #define HAVE_CLEAR_HISTORY 1
+26: #define HAVE_RL_REDISPLAY 1
+27: #define HAVE_RL_INSERT_TEXT 1
+28: #define rl_hook_func_t Function
+29: #define RUBY_EXPORT 1
+30: #endif
+/* end */
+

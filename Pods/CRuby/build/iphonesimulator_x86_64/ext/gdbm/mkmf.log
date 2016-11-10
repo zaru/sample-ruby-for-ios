@@ -1,0 +1,63 @@
+have_library: checking for gdbm_open() in -lgdbm... -------------------- yes
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/gdbm -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64   -lruby-static -framework CoreFoundation -lgdbm  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'gdbm_open'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))gdbm_open; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))gdbm_open; return !p; }
+/* end */
+
+"clang -arch x86_64 -o conftest -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/gdbm -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib   -arch x86_64   -lruby-static -framework CoreFoundation -lgdbm  -lpthread -ldl -lobjc "
+ld: warning: URGENT: building for iOS simulator, but linking against dylib (/usr/local/lib/libgdbm.dylib) built for OSX. Note: This will be an error in the future.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void gdbm_open();
+14: int t(void) { gdbm_open(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for gdbm.h... -------------------- no
+
+"clang -arch x86_64 -E -I../../.ext/include/x86_64-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/gdbm -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk -miphoneos-version-min=7.0 -fvisibility=hidden  conftest.c -o conftest.i"
+conftest.c:3:10: fatal error: 'gdbm.h' file not found
+#include <gdbm.h>
+         ^
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <gdbm.h>
+/* end */
+
+--------------------
+
+Failed to configure gdbm. It will not be installed.

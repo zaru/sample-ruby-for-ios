@@ -1,0 +1,2901 @@
+have_header: checking for sys/uio.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/types.h>
+4: #include <netdb.h>
+5: #include <string.h>
+6: #include <sys/socket.h>
+7: #include <netinet/in.h>
+8: #include <sys/uio.h>
+/* end */
+
+--------------------
+
+have_header: checking for xti.h... -------------------- no
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+conftest.c:9:10: fatal error: 'xti.h' file not found
+#include <xti.h>
+         ^
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/types.h>
+4: #include <netdb.h>
+5: #include <string.h>
+6: #include <sys/socket.h>
+7: #include <netinet/in.h>
+8: #include <sys/uio.h>
+9: #include <xti.h>
+/* end */
+
+--------------------
+
+have_header: checking for netinet/in_systm.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/types.h>
+4: #include <netdb.h>
+5: #include <string.h>
+6: #include <sys/socket.h>
+7: #include <netinet/in.h>
+8: #include <sys/uio.h>
+9: #include <netinet/in_systm.h>
+/* end */
+
+--------------------
+
+have_header: checking for netinet/tcp.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+/* end */
+
+--------------------
+
+have_header: checking for netinet/tcp_fsm.h... -------------------- no
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+conftest.c:11:10: fatal error: 'netinet/tcp_fsm.h' file not found
+#include <netinet/tcp_fsm.h>
+         ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/tcp_fsm.h>
+/* end */
+
+--------------------
+
+have_header: checking for netinet/udp.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+/* end */
+
+--------------------
+
+have_header: checking for arpa/inet.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+/* end */
+
+--------------------
+
+have_header: checking for netpacket/packet.h... -------------------- no
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+conftest.c:13:10: fatal error: 'netpacket/packet.h' file not found
+#include <netpacket/packet.h>
+         ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <netpacket/packet.h>
+/* end */
+
+--------------------
+
+have_header: checking for net/ethernet.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/un.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+/* end */
+
+--------------------
+
+have_header: checking for ifaddrs.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/ioctl.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/sockio.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+/* end */
+
+--------------------
+
+have_header: checking for net/if.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/param.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/ucred.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+/* end */
+
+--------------------
+
+have_header: checking for ucred.h... -------------------- no
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+conftest.c:21:10: fatal error: 'ucred.h' file not found
+#include <ucred.h>
+         ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <ucred.h>
+/* end */
+
+--------------------
+
+have_header: checking for net/if_dl.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+/* end */
+
+--------------------
+
+have_header: checking for arpa/nameser.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+/* end */
+
+--------------------
+
+have_header: checking for resolv.h... -------------------- yes
+
+"clang -arch armv7s -E -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct sockaddr.sa_len in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: int s = (char *)&((struct sockaddr*)0)->sa_len - (char *)0;
+27: int main(int argc, char **argv)
+28: {
+29:   return 0;
+30: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct sockaddr_in.sin_len in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: int s = (char *)&((struct sockaddr_in*)0)->sin_len - (char *)0;
+27: int main(int argc, char **argv)
+28: {
+29:   return 0;
+30: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct sockaddr_in6.sin6_len in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: int s = (char *)&((struct sockaddr_in6*)0)->sin6_len - (char *)0;
+27: int main(int argc, char **argv)
+28: {
+29:   return 0;
+30: }
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_un in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef struct sockaddr_un conftest_type;
+27: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct sockaddr_un.sun_len in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: int s = (char *)&((struct sockaddr_un*)0)->sun_len - (char *)0;
+27: int main(int argc, char **argv)
+28: {
+29:   return 0;
+30: }
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_dl in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef struct sockaddr_dl conftest_type;
+27: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_storage in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef struct sockaddr_storage conftest_type;
+27: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct addrinfo in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef struct addrinfo conftest_type;
+27: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for socklen_t in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef socklen_t conftest_type;
+27: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: int conftest_const[(sizeof(socklen_t) >= sizeof(long)) ? 1 : -1];
+/* end */
+
+have_type: checking for struct in_pktinfo in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: #if defined(IPPROTO_IP) && defined(IP_PKTINFO)
+27: typedef struct in_pktinfo conftest_type;
+28: int conftestval[sizeof(conftest_type)?1:-1];
+29: #else
+30: #error
+31: >>>>>> no in_pktinfo <<<<<<
+32: #endif
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct in_pktinfo.ipi_spec_dst in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: int s = (char *)&((struct in_pktinfo*)0)->ipi_spec_dst - (char *)0;
+27: int main(int argc, char **argv)
+28: {
+29:   return 0;
+30: }
+/* end */
+
+--------------------
+
+have_type: checking for struct in6_pktinfo in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: #if defined(IPPROTO_IPV6) && defined(IPV6_PKTINFO)
+27: typedef struct in6_pktinfo conftest_type;
+28: int conftestval[sizeof(conftest_type)?1:-1];
+29: #else
+30: #error
+31: >>>>>> no in6_pktinfo <<<<<<
+32: #endif
+/* end */
+
+--------------------
+
+have_type: checking for struct sockcred in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- no
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+conftest.c:27:17: error: invalid application of 'sizeof' to an incomplete type 'conftest_type' (aka 'struct sockcred')
+int conftestval[sizeof(conftest_type)?1:-1];
+                ^     ~~~~~~~~~~~~~~~
+conftest.c:26:16: note: forward declaration of 'struct sockcred'
+typedef struct sockcred conftest_type;
+               ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef struct sockcred conftest_type;
+27: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct cmsgcred in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- no
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+conftest.c:27:17: error: invalid application of 'sizeof' to an incomplete type 'conftest_type' (aka 'struct cmsgcred')
+int conftestval[sizeof(conftest_type)?1:-1];
+                ^     ~~~~~~~~~~~~~~~
+conftest.c:26:16: note: forward declaration of 'struct cmsgcred'
+typedef struct cmsgcred conftest_type;
+               ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef struct cmsgcred conftest_type;
+27: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct ip_mreq in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef struct ip_mreq conftest_type;
+27: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct ip_mreqn in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef struct ip_mreqn conftest_type;
+27: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for struct ipv6_mreq in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef struct ipv6_mreq conftest_type;
+27: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct msghdr.msg_control in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: int s = (char *)&((struct msghdr*)0)->msg_control - (char *)0;
+27: int main(int argc, char **argv)
+28: {
+29:   return 0;
+30: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct msghdr.msg_accrights in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- no
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+conftest.c:26:39: error: no member named 'msg_accrights' in 'struct msghdr'
+int s = (char *)&((struct msghdr*)0)->msg_accrights - (char *)0;
+                 ~~~~~~~~~~~~~~~~~~~  ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: int s = (char *)&((struct msghdr*)0)->msg_accrights - (char *)0;
+27: int main(int argc, char **argv)
+28: {
+29:   return 0;
+30: }
+/* end */
+
+--------------------
+
+have_type: checking for struct tcp_info in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- no
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+conftest.c:27:17: error: invalid application of 'sizeof' to an incomplete type 'conftest_type' (aka 'struct tcp_info')
+int conftestval[sizeof(conftest_type)?1:-1];
+                ^     ~~~~~~~~~~~~~~~
+conftest.c:26:16: note: forward declaration of 'struct tcp_info'
+typedef struct tcp_info conftest_type;
+               ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef struct tcp_info conftest_type;
+27: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_library: checking for t_open("", 0, (struct t_info *)NULL) in -lnsl... -------------------- no
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation -lnsl  -lpthread -ldl -lobjc "
+conftest.c:36:15: warning: implicit declaration of function 't_open' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { t_open("", 0, (struct t_info *)NULL); return 0; }
+              ^
+1 warning generated.
+ld: library not found for -lnsl
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { t_open("", 0, (struct t_info *)NULL); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for socket(0,0,0) in -lsocket... -------------------- no
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation -lsocket  -lpthread -ldl -lobjc "
+ld: library not found for -lsocket
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { socket(0,0,0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for socket(0,0,0) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { socket(0,0,0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sendmsg(0, (struct msghdr *)NULL, 0) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { sendmsg(0, (struct msghdr *)NULL, 0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for recvmsg(0, (struct msghdr *)NULL, 0) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { recvmsg(0, (struct msghdr *)NULL, 0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for freehostent((struct hostent *)NULL) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { freehostent((struct hostent *)NULL); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for freeaddrinfo((struct addrinfo *)NULL) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { freeaddrinfo((struct addrinfo *)NULL); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for gai_strerror(0) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { gai_strerror(0); return 0; }
+/* end */
+
+--------------------
+
+checking for gai_strerror() returns const pointer... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+conftest.c:29:22: error: read-only variable is not assignable
+    *gai_strerror(0) = 0;
+    ~~~~~~~~~~~~~~~~ ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: #include <stdlib.h>
+26: void
+27: conftest_gai_strerror_is_const()
+28: {
+29:     *gai_strerror(0) = 0;
+30: }
+/* end */
+
+--------------------
+
+have_func: checking for accept4() in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- no
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:35:57: error: use of undeclared identifier 'accept4'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))accept4; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: int t(void) { void ((*volatile p)()); p = (void ((*)()))accept4; return !p; }
+/* end */
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+Undefined symbols for architecture armv7s:
+  "_accept4", referenced from:
+      _t in conftest-aa96ae.o
+ld: symbol(s) not found for architecture armv7s
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: extern void accept4();
+36: int t(void) { accept4(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for inet_ntop(0, (const void *)0, (char *)0, 0) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { inet_ntop(0, (const void *)0, (char *)0, 0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for inet_pton(0, "", (void *)0) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { inet_pton(0, "", (void *)0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for getservbyport(0, "") in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { getservbyport(0, ""); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for getifaddrs((struct ifaddrs **)NULL) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { getifaddrs((struct ifaddrs **)NULL); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for getpeereid() in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: int t(void) { void ((*volatile p)()); p = (void ((*)()))getpeereid; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for getpeerucred(0, (ucred_t **)NULL) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- no
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:36:15: warning: implicit declaration of function 'getpeerucred' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { getpeerucred(0, (ucred_t **)NULL); return 0; }
+              ^
+conftest.c:36:42: error: expected expression
+int t(void) { getpeerucred(0, (ucred_t **)NULL); return 0; }
+                                         ^
+conftest.c:36:32: error: use of undeclared identifier 'ucred_t'
+int t(void) { getpeerucred(0, (ucred_t **)NULL); return 0; }
+                               ^
+1 warning and 2 errors generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { getpeerucred(0, (ucred_t **)NULL); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for if_indextoname(0, "") in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { if_indextoname(0, ""); return 0; }
+/* end */
+
+--------------------
+
+block in <top (required)>: checking for declaration of if_indextoname()... -------------------- no
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int if_indextoname(void);
+/* end */
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: void if_indextoname(void);
+/* end */
+
+--------------------
+
+have_func: checking for if_nametoindex("") in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { if_nametoindex(""); return 0; }
+/* end */
+
+--------------------
+
+block in <top (required)>: checking for declaration of if_nametoindex()... -------------------- no
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int if_nametoindex(void);
+/* end */
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: void if_nametoindex(void);
+/* end */
+
+--------------------
+
+have_func: checking for hsterror() in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- no
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:35:57: error: use of undeclared identifier 'hsterror'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))hsterror; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: int t(void) { void ((*volatile p)()); p = (void ((*)()))hsterror; return !p; }
+/* end */
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+Undefined symbols for architecture armv7s:
+  "_hsterror", referenced from:
+      _t in conftest-b076f4.o
+ld: symbol(s) not found for architecture armv7s
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: extern void hsterror();
+36: int t(void) { hsterror(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for getipnodebyname("", 0, 0, (int *)0) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { getipnodebyname("", 0, 0, (int *)0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for gethostbyname2("", 0) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { gethostbyname2("", 0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for socketpair(0, 0, 0, 0) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { socketpair(0, 0, 0, 0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for gethostname((char *)0, 0) in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: 
+36: int t(void) { gethostname((char *)0, 0); return 0; }
+/* end */
+
+--------------------
+
+checking for ipv6... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #ifndef _WIN32
+ 5: #include <sys/socket.h>
+ 6: #endif
+ 7: int
+ 8: main(void)
+ 9: {
+10:   socket(AF_INET6, SOCK_STREAM, 0);
+11:   return 0;
+12: }
+/* end */
+
+--------------------
+
+checking for ipv6 type... -------------------- kame
+
+have_macro: checking for IPV6_INRIA_VERSION in netinet/in.h... -------------------- no
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+conftest.c:6:3: error: 
+# error
+  ^
+conftest.c:7:1: error: expected identifier or '('
+|:/ === IPV6_INRIA_VERSION undefined === /:|
+^
+2 errors generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <netinet/in.h>
+4: /*top*/
+5: #ifndef IPV6_INRIA_VERSION
+6: # error
+7: |:/ === IPV6_INRIA_VERSION undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+have_macro: checking for __KAME__ in netinet/in.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <netinet/in.h>
+4: /*top*/
+5: #ifndef __KAME__
+6: # error
+7: |:/ === __KAME__ undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+have_library: checking for main() in -linet6... -------------------- no
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation -linet6  -lpthread -ldl -lobjc "
+ld: library not found for -linet6
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))main; return !p; }
+/* end */
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation -linet6  -lpthread -ldl -lobjc "
+conftest.c:13:8: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+extern void main();
+       ^
+conftest.c:13:8: note: change return type to 'int'
+extern void main();
+       ^~~~
+       int
+conftest.c:13:13: error: conflicting types for 'main'
+extern void main();
+            ^
+conftest.c:5:5: note: previous definition is here
+int main(int argc, char **argv)
+    ^
+conftest.c:14:20: error: too few arguments to function call, expected 2, have 0
+int t(void) { main(); return 0; }
+              ~~~~ ^
+conftest.c:5:1: note: 'main' declared here
+int main(int argc, char **argv)
+^
+1 warning and 2 errors generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void main();
+14: int t(void) { main(); return 0; }
+/* end */
+
+--------------------
+
+--------------------
+
+have_macro: checking for IPPROTO_IPV6 in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: /*top*/
+25: #ifndef IPPROTO_IPV6
+26: # error
+27: |:/ === IPPROTO_IPV6 undefined === /:|
+28: #endif
+/* end */
+
+--------------------
+
+have_const: checking for AF_UNIX in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef int conftest_type;
+27: conftest_type conftestval = (int)AF_UNIX;
+/* end */
+
+--------------------
+
+have_const: checking for SCM_RIGHTS in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: typedef int conftest_type;
+27: conftest_type conftestval = (int)SCM_RIGHTS;
+/* end */
+
+--------------------
+
+have_func: checking for getnameinfo() in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: int t(void) { void ((*volatile p)()); p = (void ((*)()))getnameinfo; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for getaddrinfo() in sys/types.h,netdb.h,string.h,sys/socket.h,netinet/in.h,sys/uio.h,netinet/in_systm.h,netinet/tcp.h,netinet/udp.h,arpa/inet.h,net/ethernet.h,sys/un.h,ifaddrs.h,sys/ioctl.h,sys/sockio.h,net/if.h,sys/param.h,sys/ucred.h,net/if_dl.h,arpa/nameser.h,resolv.h... -------------------- yes
+
+"clang -arch armv7s -o conftest -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542 conftest.c  -L. -L../.. -L. -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib -lSystem -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <netdb.h>
+ 5: #include <string.h>
+ 6: #include <sys/socket.h>
+ 7: #include <netinet/in.h>
+ 8: #include <sys/uio.h>
+ 9: #include <netinet/in_systm.h>
+10: #include <netinet/tcp.h>
+11: #include <netinet/udp.h>
+12: #include <arpa/inet.h>
+13: #include <net/ethernet.h>
+14: #include <sys/un.h>
+15: #include <ifaddrs.h>
+16: #include <sys/ioctl.h>
+17: #include <sys/sockio.h>
+18: #include <net/if.h>
+19: #include <sys/param.h>
+20: #include <sys/ucred.h>
+21: #include <net/if_dl.h>
+22: #include <arpa/nameser.h>
+23: #include <resolv.h>
+24: 
+25: /*top*/
+26: extern int t(void);
+27: int main(int argc, char **argv)
+28: {
+29:   if (argc > 1000000) {
+30:     printf("%p", &t);
+31:   }
+32: 
+33:   return 0;
+34: }
+35: int t(void) { void ((*volatile p)()); p = (void ((*)()))getaddrinfo; return !p; }
+/* end */
+
+--------------------
+
+"clang -arch armv7s -I../../.ext/include/-darwin -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/include -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby/ext/socket -I../.. -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/ruby -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk -miphoneos-version-min=7.0 -I/Users/hiro/Library/Caches/CocoaPods/Pods/External/CRuby/193c1c8340a477e394e63f996e6fccdb/build/iphoneos_armv7s/include -fvisibility=hidden -D__APPLE_USE_RFC_3542  -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <netinet/in.h>
+4: int t(struct in6_addr *addr) {return IN6_IS_ADDR_UNSPECIFIED(addr);}
+/* end */
+
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_SYS_UIO_H 1
+ 4: #define HAVE_NETINET_IN_SYSTM_H 1
+ 5: #define HAVE_NETINET_TCP_H 1
+ 6: #define HAVE_NETINET_UDP_H 1
+ 7: #define HAVE_ARPA_INET_H 1
+ 8: #define HAVE_NET_ETHERNET_H 1
+ 9: #define HAVE_SYS_UN_H 1
+10: #define HAVE_IFADDRS_H 1
+11: #define HAVE_SYS_IOCTL_H 1
+12: #define HAVE_SYS_SOCKIO_H 1
+13: #define HAVE_NET_IF_H 1
+14: #define HAVE_SYS_PARAM_H 1
+15: #define HAVE_SYS_UCRED_H 1
+16: #define HAVE_NET_IF_DL_H 1
+17: #define HAVE_ARPA_NAMESER_H 1
+18: #define HAVE_RESOLV_H 1
+19: #define HAVE_STRUCT_SOCKADDR_SA_LEN 1
+20: #define HAVE_ST_SA_LEN 1
+21: #define HAVE_STRUCT_SOCKADDR_IN_SIN_LEN 1
+22: #define HAVE_ST_SIN_LEN 1
+23: #define HAVE_STRUCT_SOCKADDR_IN6_SIN6_LEN 1
+24: #define HAVE_ST_SIN6_LEN 1
+25: #define HAVE_TYPE_STRUCT_SOCKADDR_UN 1
+26: #define HAVE_STRUCT_SOCKADDR_UN_SUN_LEN 1
+27: #define HAVE_ST_SUN_LEN 1
+28: #define HAVE_TYPE_STRUCT_SOCKADDR_DL 1
+29: #define HAVE_TYPE_STRUCT_SOCKADDR_STORAGE 1
+30: #define HAVE_TYPE_STRUCT_ADDRINFO 1
+31: #define HAVE_TYPE_SOCKLEN_T 1
+32: #define RSTRING_SOCKLEN (socklen_t)RSTRING_LEN
+33: #define HAVE_TYPE_STRUCT_IN_PKTINFO 1
+34: #define HAVE_STRUCT_IN_PKTINFO_IPI_SPEC_DST 1
+35: #define HAVE_ST_IPI_SPEC_DST 1
+36: #define HAVE_TYPE_STRUCT_IN6_PKTINFO 1
+37: #define HAVE_TYPE_STRUCT_IP_MREQ 1
+38: #define HAVE_TYPE_STRUCT_IP_MREQN 1
+39: #define HAVE_TYPE_STRUCT_IPV6_MREQ 1
+40: #define HAVE_STRUCT_MSGHDR_MSG_CONTROL 1
+41: #define HAVE_ST_MSG_CONTROL 1
+42: #define HAVE_SOCKET 1
+43: #define HAVE_SENDMSG 1
+44: #define HAVE_RECVMSG 1
+45: #define HAVE_FREEHOSTENT 1
+46: #define HAVE_FREEADDRINFO 1
+47: #define HAVE_GAI_STRERROR 1
+48: #define GAI_STRERROR_CONST 1
+49: #define HAVE_INET_NTOP 1
+50: #define HAVE_INET_PTON 1
+51: #define HAVE_GETSERVBYPORT 1
+52: #define HAVE_GETIFADDRS 1
+53: #define HAVE_GETPEEREID 1
+54: #define HAVE_IF_INDEXTONAME 1
+55: #define NEED_IF_INDEXTONAME_DECL 1
+56: #define HAVE_IF_NAMETOINDEX 1
+57: #define NEED_IF_NAMETOINDEX_DECL 1
+58: #define HAVE_GETIPNODEBYNAME 1
+59: #define HAVE_GETHOSTBYNAME2 1
+60: #define HAVE_SOCKETPAIR 1
+61: #define HAVE_GETHOSTNAME 1
+62: #define ENABLE_IPV6 1
+63: #define INET6 1
+64: #define HAVE_CONST_AF_UNIX 1
+65: #define HAVE_CONST_SCM_RIGHTS 1
+66: #define HAVE_GETNAMEINFO 1
+67: #define HAVE_GETADDRINFO 1
+68: #define RUBY_EXPORT 1
+69: #endif
+/* end */
+

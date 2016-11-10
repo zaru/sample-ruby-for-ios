@@ -13,9 +13,11 @@
 		450253CF1DD4C2DC009F2069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450253CD1DD4C2DC009F2069 /* Main.storyboard */; };
 		450253D11DD4C2DC009F2069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450253D01DD4C2DC009F2069 /* Assets.xcassets */; };
 		450253D41DD4C2DC009F2069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450253D21DD4C2DC009F2069 /* LaunchScreen.storyboard */; };
+		D34153E50B16F06127F40B53 /* libPods-sample-ruby-objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA323A523C36195F4AC7BFC6 /* libPods-sample-ruby-objc.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11C72725C4FC97CBA0043F2C /* Pods-sample-ruby-objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-ruby-objc.release.xcconfig"; path = "Pods/Target Support Files/Pods-sample-ruby-objc/Pods-sample-ruby-objc.release.xcconfig"; sourceTree = "<group>"; };
 		450253C11DD4C2DC009F2069 /* sample-ruby-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-ruby-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		450253C51DD4C2DC009F2069 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		450253C71DD4C2DC009F2069 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		450253D01DD4C2DC009F2069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		450253D31DD4C2DC009F2069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		450253D51DD4C2DC009F2069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA323A523C36195F4AC7BFC6 /* libPods-sample-ruby-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sample-ruby-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF0C24DC7C206D4290C02DB /* Pods-sample-ruby-objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-ruby-objc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sample-ruby-objc/Pods-sample-ruby-objc.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34153E50B16F06127F40B53 /* libPods-sample-ruby-objc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				450253C31DD4C2DC009F2069 /* sample-ruby-objc */,
 				450253C21DD4C2DC009F2069 /* Products */,
+				E575676220E05B212E7155D6 /* Pods */,
+				ABD54179BFCD9532A8673BC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ABD54179BFCD9532A8673BC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA323A523C36195F4AC7BFC6 /* libPods-sample-ruby-objc.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E575676220E05B212E7155D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCF0C24DC7C206D4290C02DB /* Pods-sample-ruby-objc.debug.xcconfig */,
+				11C72725C4FC97CBA0043F2C /* Pods-sample-ruby-objc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 450253D81DD4C2DC009F2069 /* Build configuration list for PBXNativeTarget "sample-ruby-objc" */;
 			buildPhases = (
+				DBD6EED3A1049D66633AD560 /* [CP] Check Pods Manifest.lock */,
 				450253BD1DD4C2DC009F2069 /* Sources */,
 				450253BE1DD4C2DC009F2069 /* Frameworks */,
 				450253BF1DD4C2DC009F2069 /* Resources */,
+				7CC96289ACBFCCB1389C8DDE /* [CP] Embed Pods Frameworks */,
+				1EFF5597F652AD70DFAE1CE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +137,7 @@
 				TargetAttributes = {
 					450253C01DD4C2DC009F2069 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = TH5EXGHJTG;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -144,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EFF5597F652AD70DFAE1CE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sample-ruby-objc/Pods-sample-ruby-objc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CC96289ACBFCCB1389C8DDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sample-ruby-objc/Pods-sample-ruby-objc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBD6EED3A1049D66633AD560 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		450253BD1DD4C2DC009F2069 /* Sources */ = {
@@ -218,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -259,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -268,23 +344,33 @@
 		};
 		450253D91DD4C2DC009F2069 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCF0C24DC7C206D4290C02DB /* Pods-sample-ruby-objc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TH5EXGHJTG;
 				INFOPLIST_FILE = "sample-ruby-objc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.tofu-kun.sample-ruby-objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		450253DA1DD4C2DC009F2069 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11C72725C4FC97CBA0043F2C /* Pods-sample-ruby-objc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TH5EXGHJTG;
 				INFOPLIST_FILE = "sample-ruby-objc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.tofu-kun.sample-ruby-objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -307,6 +393,7 @@
 				450253DA1DD4C2DC009F2069 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

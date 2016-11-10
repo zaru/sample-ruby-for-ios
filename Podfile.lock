@@ -1,0 +1,21 @@
+PODS:
+  - CRuby (0.1.0)
+
+DEPENDENCIES:
+  - CRuby (from `https://github.com/zaru/cruby`)
+
+EXTERNAL SOURCES:
+  CRuby:
+    :git: https://github.com/zaru/cruby
+
+CHECKOUT OPTIONS:
+  CRuby:
+    :commit: 4e01c6d889211d1c585b31d697f603fc7c1ac887
+    :git: https://github.com/zaru/cruby
+
+SPEC CHECKSUMS:
+  CRuby: 39a3d88baebf3fe20891a0cdbbf87b9d3ad0ac44
+
+PODFILE CHECKSUM: 86c5624cb0ab4c4f9ff4ac42fb7f8fe148d6bf77
+
+COCOAPODS: 1.1.1

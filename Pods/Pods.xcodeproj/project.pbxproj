@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		224793C04B34168C810E4BAFCC2F0E95 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = C87DEDDD52A13A20BC3642D7B3C82780 /* lib */; };
+		29B31454EDA753E191C7DCC9904A07E8 /* CRBValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A552182628D3AFC112EB5861F2A7C4 /* CRBValue.m */; };
+		2A776E34142A275C3A474EFB033EAB53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834571705A0ED968DF08720DA615A531 /* Foundation.framework */; };
+		462F4C501EA8ED2ACBE8B3CED4928CC4 /* CRuby.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FC1DD490D365777F3FC36FA6B438E7 /* CRuby.m */; };
+		49E0AB5DD0F0AD7AB8434E57CB857F60 /* CRuby_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7AD9EC6A9D5BB6059669FBE0AB67B0 /* CRuby_ios.framework */; };
+		D502993F70B0A73056879876FF8B3D8B /* CRuby.h in Headers */ = {isa = PBXBuildFile; fileRef = 396AAD1CAF8B1AC8D33690CB743C6B47 /* CRuby.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA78F3EA33587224E401DD7EC22BB5B5 /* Pods-sample-ruby-objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EF2D97095AB31BE29679FE7BCACC87 /* Pods-sample-ruby-objc-dummy.m */; };
+		DF5378AE37E502E11B2A952224F1C026 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834571705A0ED968DF08720DA615A531 /* Foundation.framework */; };
+		E2F337A7E3624D67AF4B617F2B5BAA73 /* CRuby-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DC36BAA743965E5BB12E3844DC516 /* CRuby-dummy.m */; };
+		EBB11B4C7764455AE8235680E34825C6 /* CRBValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CE6E9544DBBFB5DD020BB04821CC480 /* CRBValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		503EE94FE69D7B787CACAC192D122EB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1D2F58DE734538D1B3FD10E6D48DFFA;
+			remoteInfo = CRuby;
+		};
+		566EB04E05FEB9D3924C09BBD0E11A3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE81B24CFC011874879256D378F0AD62;
+			remoteInfo = "CRuby-CRuby";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06AD8AA0660C9CEB8782686C6EFEF120 /* libCRuby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCRuby.a; path = libCRuby.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		210C740C1A69DCFAA327A311C552C0A8 /* Pods-sample-ruby-objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sample-ruby-objc.debug.xcconfig"; sourceTree = "<group>"; };
+		26EF2D97095AB31BE29679FE7BCACC87 /* Pods-sample-ruby-objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sample-ruby-objc-dummy.m"; sourceTree = "<group>"; };
+		2C10C038B8FA77FCF10ACAA6576C6A5B /* ResourceBundle-CRuby-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CRuby-Info.plist"; sourceTree = "<group>"; };
+		368DC36BAA743965E5BB12E3844DC516 /* CRuby-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CRuby-dummy.m"; sourceTree = "<group>"; };
+		396AAD1CAF8B1AC8D33690CB743C6B47 /* CRuby.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRuby.h; path = CRuby/CRuby.h; sourceTree = "<group>"; };
+		42A552182628D3AFC112EB5861F2A7C4 /* CRBValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRBValue.m; path = CRuby/CRBValue.m; sourceTree = "<group>"; };
+		4CE6E9544DBBFB5DD020BB04821CC480 /* CRBValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRBValue.h; path = CRuby/CRBValue.h; sourceTree = "<group>"; };
+		5DE8CF8896BE873FDF09514D6BA7A465 /* CRuby.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CRuby.bundle; path = CRuby.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C00253D26CE78F2937A25F31E167904 /* CRuby-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CRuby-prefix.pch"; sourceTree = "<group>"; };
+		723A0D20799F2ABCCA6844A0AD7F25AE /* Pods-sample-ruby-objc-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sample-ruby-objc-acknowledgements.plist"; sourceTree = "<group>"; };
+		72479BDBA2D342DE7CA08095E786B53E /* Pods-sample-ruby-objc-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-sample-ruby-objc-frameworks.sh"; sourceTree = "<group>"; };
+		834571705A0ED968DF08720DA615A531 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ACED32F6D186F6B81FDD9E25593140E /* libPods-sample-ruby-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-sample-ruby-objc.a"; path = "libPods-sample-ruby-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FC1DD490D365777F3FC36FA6B438E7 /* CRuby.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRuby.m; path = CRuby/CRuby.m; sourceTree = "<group>"; };
+		BD7AD9EC6A9D5BB6059669FBE0AB67B0 /* CRuby_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CRuby_ios.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CRuby_ios.framework; sourceTree = DEVELOPER_DIR; };
+		C28C9B3F6198CC91F28E5B4787F32864 /* CRuby.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CRuby.xcconfig; sourceTree = "<group>"; };
+		C87DEDDD52A13A20BC3642D7B3C82780 /* lib */ = {isa = PBXFileReference; includeInIndex = 1; name = lib; path = build/lib; sourceTree = "<group>"; };
+		DF99F0A22E19A6CF52F9FBD57FE86912 /* Pods-sample-ruby-objc-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-sample-ruby-objc-resources.sh"; sourceTree = "<group>"; };
+		EEC09B391748C82E0E36676640688941 /* Pods-sample-ruby-objc-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-sample-ruby-objc-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC002CC85086950AF44942D2BB0476A1 /* Pods-sample-ruby-objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sample-ruby-objc.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25F26E279C0872218A5DB660EFC8CF1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5378AE37E502E11B2A952224F1C026 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7C50B9B2AF0471A9AAABA5A921FB65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E0AB5DD0F0AD7AB8434E57CB857F60 /* CRuby_ios.framework in Frameworks */,
+				2A776E34142A275C3A474EFB033EAB53 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D664A83EF06DA6B9D9B6A85C1FAA15B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26F5DCD7811F965791164DDBF19B920A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BD7AD9EC6A9D5BB6059669FBE0AB67B0 /* CRuby_ios.framework */,
+				834571705A0ED968DF08720DA615A531 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2AEB85C14043C0FAD28FB2B91DBA35CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DE8CF8896BE873FDF09514D6BA7A465 /* CRuby.bundle */,
+				06AD8AA0660C9CEB8782686C6EFEF120 /* libCRuby.a */,
+				9ACED32F6D186F6B81FDD9E25593140E /* libPods-sample-ruby-objc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26F5DCD7811F965791164DDBF19B920A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		490640B053808020AFCBAEE9256CE1CA /* Pods-sample-ruby-objc */ = {
+			isa = PBXGroup;
+			children = (
+				EEC09B391748C82E0E36676640688941 /* Pods-sample-ruby-objc-acknowledgements.markdown */,
+				723A0D20799F2ABCCA6844A0AD7F25AE /* Pods-sample-ruby-objc-acknowledgements.plist */,
+				26EF2D97095AB31BE29679FE7BCACC87 /* Pods-sample-ruby-objc-dummy.m */,
+				72479BDBA2D342DE7CA08095E786B53E /* Pods-sample-ruby-objc-frameworks.sh */,
+				DF99F0A22E19A6CF52F9FBD57FE86912 /* Pods-sample-ruby-objc-resources.sh */,
+				210C740C1A69DCFAA327A311C552C0A8 /* Pods-sample-ruby-objc.debug.xcconfig */,
+				FC002CC85086950AF44942D2BB0476A1 /* Pods-sample-ruby-objc.release.xcconfig */,
+			);
+			name = "Pods-sample-ruby-objc";
+			path = "Target Support Files/Pods-sample-ruby-objc";
+			sourceTree = "<group>";
+		};
+		565DF142327078DAFCC38B0F8ACEB584 /* CRuby */ = {
+			isa = PBXGroup;
+			children = (
+				4CE6E9544DBBFB5DD020BB04821CC480 /* CRBValue.h */,
+				42A552182628D3AFC112EB5861F2A7C4 /* CRBValue.m */,
+				396AAD1CAF8B1AC8D33690CB743C6B47 /* CRuby.h */,
+				B5FC1DD490D365777F3FC36FA6B438E7 /* CRuby.m */,
+				B31D509A8586249BF2FA3AB351C766FF /* Resources */,
+				8C7FD715D30C7ABBB745E6B759629D49 /* Support Files */,
+			);
+			name = CRuby;
+			path = CRuby;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				B375CA8DFB59D43AC3F8118730724909 /* Pods */,
+				2AEB85C14043C0FAD28FB2B91DBA35CF /* Products */,
+				E58D2A7F4FE8A6C4513C5BD4A0B1009A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C7FD715D30C7ABBB745E6B759629D49 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C28C9B3F6198CC91F28E5B4787F32864 /* CRuby.xcconfig */,
+				368DC36BAA743965E5BB12E3844DC516 /* CRuby-dummy.m */,
+				6C00253D26CE78F2937A25F31E167904 /* CRuby-prefix.pch */,
+				2C10C038B8FA77FCF10ACAA6576C6A5B /* ResourceBundle-CRuby-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CRuby";
+			sourceTree = "<group>";
+		};
+		B31D509A8586249BF2FA3AB351C766FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C87DEDDD52A13A20BC3642D7B3C82780 /* lib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B375CA8DFB59D43AC3F8118730724909 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				565DF142327078DAFCC38B0F8ACEB584 /* CRuby */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E58D2A7F4FE8A6C4513C5BD4A0B1009A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				490640B053808020AFCBAEE9256CE1CA /* Pods-sample-ruby-objc */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		86524C284AB10C6F6769E79B830AE845 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB11B4C7764455AE8235680E34825C6 /* CRBValue.h in Headers */,
+				D502993F70B0A73056879876FF8B3D8B /* CRuby.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B20406F47F2C121FE86BE33F805AFE65 /* Pods-sample-ruby-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DC005F0BE682395E89A8292F5C304CF /* Build configuration list for PBXNativeTarget "Pods-sample-ruby-objc" */;
+			buildPhases = (
+				2AC3CF525EB44EB7ED1C85ADB26568F8 /* Sources */,
+				25F26E279C0872218A5DB660EFC8CF1B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				126A0662ABB65BC021E71BE3A9C9372F /* PBXTargetDependency */,
+			);
+			name = "Pods-sample-ruby-objc";
+			productName = "Pods-sample-ruby-objc";
+			productReference = 9ACED32F6D186F6B81FDD9E25593140E /* libPods-sample-ruby-objc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C1D2F58DE734538D1B3FD10E6D48DFFA /* CRuby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88CF1FE401DEAA08D342C3F96F468560 /* Build configuration list for PBXNativeTarget "CRuby" */;
+			buildPhases = (
+				74584E08E280CD906E4ED48EDDAC526D /* Sources */,
+				CD7C50B9B2AF0471A9AAABA5A921FB65 /* Frameworks */,
+				86524C284AB10C6F6769E79B830AE845 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70140B39A596964964433FAFA363A92B /* PBXTargetDependency */,
+			);
+			name = CRuby;
+			productName = CRuby;
+			productReference = 06AD8AA0660C9CEB8782686C6EFEF120 /* libCRuby.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE81B24CFC011874879256D378F0AD62 /* CRuby-CRuby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F83988AA1EEEC5C2B85882743B0D4E27 /* Build configuration list for PBXNativeTarget "CRuby-CRuby" */;
+			buildPhases = (
+				F58FCDD39210531039B376DAA738C2F7 /* Sources */,
+				D664A83EF06DA6B9D9B6A85C1FAA15B6 /* Frameworks */,
+				301D9D184A00E610FC152D0CAA40EB97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CRuby-CRuby";
+			productName = "CRuby-CRuby";
+			productReference = 5DE8CF8896BE873FDF09514D6BA7A465 /* CRuby.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2AEB85C14043C0FAD28FB2B91DBA35CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1D2F58DE734538D1B3FD10E6D48DFFA /* CRuby */,
+				FE81B24CFC011874879256D378F0AD62 /* CRuby-CRuby */,
+				B20406F47F2C121FE86BE33F805AFE65 /* Pods-sample-ruby-objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		301D9D184A00E610FC152D0CAA40EB97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224793C04B34168C810E4BAFCC2F0E95 /* lib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AC3CF525EB44EB7ED1C85ADB26568F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA78F3EA33587224E401DD7EC22BB5B5 /* Pods-sample-ruby-objc-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74584E08E280CD906E4ED48EDDAC526D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B31454EDA753E191C7DCC9904A07E8 /* CRBValue.m in Sources */,
+				E2F337A7E3624D67AF4B617F2B5BAA73 /* CRuby-dummy.m in Sources */,
+				462F4C501EA8ED2ACBE8B3CED4928CC4 /* CRuby.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F58FCDD39210531039B376DAA738C2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		126A0662ABB65BC021E71BE3A9C9372F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CRuby;
+			target = C1D2F58DE734538D1B3FD10E6D48DFFA /* CRuby */;
+			targetProxy = 503EE94FE69D7B787CACAC192D122EB1 /* PBXContainerItemProxy */;
+		};
+		70140B39A596964964433FAFA363A92B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CRuby-CRuby";
+			target = FE81B24CFC011874879256D378F0AD62 /* CRuby-CRuby */;
+			targetProxy = 566EB04E05FEB9D3924C09BBD0E11A3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		014891F4FFA42709F40AB77B59FC93F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28C9B3F6198CC91F28E5B4787F32864 /* CRuby.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CRuby";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/CRuby/ResourceBundle-CRuby-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = CRuby;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		42703636664055D79FE3B635F1BAAC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28C9B3F6198CC91F28E5B4787F32864 /* CRuby.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CRuby/CRuby-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		713AC652EDCAC26A08C3C9E49B8D485C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28C9B3F6198CC91F28E5B4787F32864 /* CRuby.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CRuby";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/CRuby/ResourceBundle-CRuby-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = CRuby;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8D0008DC283E6489A9024FFDC08ED3B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28C9B3F6198CC91F28E5B4787F32864 /* CRuby.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CRuby/CRuby-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E1A3DC1FCE1C022C0EBF4B81BE49E077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 210C740C1A69DCFAA327A311C552C0A8 /* Pods-sample-ruby-objc.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F7424B86DFEE844AC1026B6366B96A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC002CC85086950AF44942D2BB0476A1 /* Pods-sample-ruby-objc.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DC005F0BE682395E89A8292F5C304CF /* Build configuration list for PBXNativeTarget "Pods-sample-ruby-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A3DC1FCE1C022C0EBF4B81BE49E077 /* Debug */,
+				F7424B86DFEE844AC1026B6366B96A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88CF1FE401DEAA08D342C3F96F468560 /* Build configuration list for PBXNativeTarget "CRuby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0008DC283E6489A9024FFDC08ED3B7 /* Debug */,
+				42703636664055D79FE3B635F1BAAC5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F83988AA1EEEC5C2B85882743B0D4E27 /* Build configuration list for PBXNativeTarget "CRuby-CRuby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				014891F4FFA42709F40AB77B59FC93F2 /* Debug */,
+				713AC652EDCAC26A08C3C9E49B8D485C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
