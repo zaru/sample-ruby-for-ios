@@ -19,10 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)doRun:(id)sender {
     
-    CRBValue *result = [CRuby evaluate:@"%w(ios meets ruby).join('😆')"];
+    CRBValue *result = [CRuby evaluate: self.code.text];
     NSString *string = result.inspect;
-    NSLog(@"result: %@", string);
+    self.result.text = string;
+    
 }
 
 
